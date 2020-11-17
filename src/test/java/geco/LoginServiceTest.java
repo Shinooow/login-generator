@@ -46,6 +46,7 @@ public class LoginServiceTest {
         assertTrue("Equals method must return true", resultatAttendu.equals(resultatObtenu));
     }
 
+
     @Test
     public void findAllLoginsStartingWithTest() {
         List<String> resultatAttendu = new ArrayList<>(Arrays.asList("Log", "Name", "TestName", "Jean", "Dupont", "Naame"));
