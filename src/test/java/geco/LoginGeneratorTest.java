@@ -54,6 +54,16 @@ public class LoginGeneratorTest {
         String resultatAttendu = "PDUR";
         String resultatObtenu = loginGenerator.generateLoginForNomAndPrenom(nom, prenom);
         assertEquals("Expected generated login must be PDUR", resultatAttendu, resultatObtenu);
-        assertTrue("loginService must contain JROL1", loginService.loginExists("PDUR"));
+        assertTrue("loginService must contain PDU", loginService.loginExists("PDUR"));
+    }
+
+    @Test
+    public void CTAjoutPaulDu() {
+        String prenom = "Paul";
+        String nom = "Du";
+        String resultatAttendu = "PDU";
+        String resultatObtenu = loginGenerator.generateLoginForNomAndPrenom(nom, prenom);
+        assertEquals("Expected generated login must be PDU", resultatAttendu, resultatObtenu);
+        assertTrue("loginService must contain PDU", loginService.loginExists("PDU"));
     }
 }
