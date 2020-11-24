@@ -37,6 +37,7 @@ public class LoginGenerator {
         String p = deAccent(prenom.substring(0,1).toUpperCase());
         String n;
         if(nom.length() >= 3) {
+            System.out.println("ayo");
             n = deAccent(nom.substring(0,3).toUpperCase());
         } else {
             n = deAccent(nom.substring(0,nom.length()).toUpperCase());
