@@ -33,32 +33,6 @@ public class LoginGenerator {
      * @param prenom le prenom
      * @return le login genere
      *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     public String generateLoginForNomAndPrenom(String nom, String prenom) {
         String p = deAccent(prenom.substring(0,1).toUpperCase());
@@ -81,9 +55,6 @@ public class LoginGenerator {
         return login;
     }
 
-    private void testNig() {
-        System.out.println("wesh les n");
-    }
     /**
      * Supprime les accents d'une chaine de caractere
      *
@@ -95,10 +66,5 @@ public class LoginGenerator {
         Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
         return pattern.matcher(nfdNormalizedString).replaceAll("");
     }
-
-
-
-
-
 
 }
